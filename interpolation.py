@@ -10,4 +10,4 @@ mes_Aniversario = "Outubro"
 ano_Aniversario = 2023
 idade = 24
 
-print("no dia {} de {} de {} irei comemorar os meus {} anos.".format(dia,mes_Aniversario,ano_Aniversario,idade))
+print("no dia {} de {} de {} irei comemorar  gmeus {} anos.".format(dia,mes_Aniversario,ano_Aniversario,idade))
