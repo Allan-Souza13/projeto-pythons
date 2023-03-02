@@ -23,7 +23,7 @@ for rodada in range(1, total_de_tentativas + 1 ):
     print("Você digitou ", chute_str)
     chute = int(chute_str)
 
-    if(chute < 1 | chute > 100): #utilizei o ou para saber se o usuario digitou menor que 1 ou maior que 100
+    if(chute < 1 | chute > 100): #utilizei o ou para saber se o usuario digitou menor que 1 ou maior que 100'
         print("Você deve digitar um numero entre 1 e 100!")
         continue#continua a rodada
 
