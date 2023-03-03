@@ -1,12 +1,18 @@
 # Jogo de Adivinhação
+
+#importando a biblioteca random
+import random
+
 print("*********************************")
 print("Bem vindo ao jogo de adivinhação!")
 print("*********************************")
 
-numero_secreto = 42
-total_de_tentativas = 3
-#rodada = 0  define no while
+#Numero secreto aleatório
+numero_secreto  = random.randrange(1,101)#irá colocar um numero secreto aleatório de 1 a 100
+total_de_tentativas = 5
 
+
+#rodada = 0  define no while
 #------- Laço de repetição em while --------#
 #enquanto ainda há tentativas:
 #while (rodada < total_de_tentativas ):#laço de repetição com while
