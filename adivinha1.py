@@ -10,7 +10,20 @@ print("*********************************")
 #Numero secreto aleatório
 numero_secreto  = random.randrange(1,101)#irá colocar um numero secreto aleatório de 1 a 100
 total_de_tentativas = 5
+pontos = 1000
 
+#Nível de dificuldade
+print("Qual o nivel de dificuldade do Jogo",numero_secreto)
+print("(1) Fácil (2) Médio (3) Dificil")
+
+nivel = int(input("Define o nivel:"))
+
+if(nivel==1):
+    total_de_tentativas =20
+elif(nivel==2):
+    total_de_tentativas = 10
+else:
+    total_de_tentativas = 5
 
 #rodada = 0  define no while
 #------- Laço de repetição em while --------#
@@ -40,13 +53,15 @@ for rodada in range(1, total_de_tentativas + 1 ):
     menor =  chute < numero_secreto
 
     if (acertou):
-        print("Você acertou!")
+        print("Você acertou fez {} pontos!".format(pontos))
         break #finaliza o laço da rodada quando acerta o numero.
     else:
         if(maior):
             print("Você errou! O seu chute foi maior do que o que o número secreto. ")
         elif(menor):
             print("Você errou! O seu chute foi menor do que o que o número secreto. ")
+            pontos_perdidos = abs(numero_secreto - chute)
+            pontos = pontos - pontos_perdidos
 
     #rodada = rodada +1  encrenta no while
 
