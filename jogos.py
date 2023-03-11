@@ -14,5 +14,7 @@ def escolhe_jogo():
     elif(jogo == 2):
         print("Jogar Forca")
         forca.jogar()
+
+
 if(__name__=="__main__"):#Garante a execução como um programa principal
     escolhe_jogo()
