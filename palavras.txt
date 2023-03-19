@@ -1,0 +1,11 @@
+manga
+uva
+pera
+melancia
+banana
+caju
+tomate
+coco
+abacaxi
+cereja
+morango
